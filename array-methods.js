@@ -21,7 +21,7 @@ const planetEl = document.getElementById("planets")
 
     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase
 */
-console.log(planets);
+console.log("Normalcase: " + planets);
 
 function planetsUpp(input) {
     return input.map(function(word){
@@ -29,7 +29,7 @@ function planetsUpp(input) {
     });
 };
 
-console.log(planetsUpp(planets));
+console.log("Uppercase: " + planetsUpp(planets));
 
 /*
     Use the filter method to create a new array that
