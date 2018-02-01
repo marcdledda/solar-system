@@ -7,6 +7,11 @@ const planets = ["mercury", "venus", "earth", "mars", "jupiter", "saturn", "uran
     to a section element in your HTML with an id of "planets".
     Use string templates to construct the DOM elements.
 */
+
+planets.forEach(function(planets) {
+    document.getElementById("planets").innerHTML += (planets + " || ");
+});
+
 const planetEl = document.getElementById("planets")
 
 /*
@@ -16,7 +21,15 @@ const planetEl = document.getElementById("planets")
 
     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase
 */
+console.log(planets);
 
+function planetsUpp(input) {
+    return input.map(function(word){
+        return (word.charAt(0).toUpperCase() + word.slice(1));
+    });
+};
+
+console.log(planetsUpp(planets));
 
 /*
     Use the filter method to create a new array that
