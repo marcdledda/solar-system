@@ -21,6 +21,7 @@ const planetEl = document.getElementById("planets")
 
     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase
 */
+
 console.log("Lowercase:")
 console.log(planets);
 
@@ -38,6 +39,12 @@ console.log(upperPlanet);
 
     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes
 */
+
+let filterPlanets = planets.filter(function(word) {
+    return (word.toString().includes("e"));
+});
+
+console.log(filterPlanets);
 
 // Use the reduce method to create a sentence from the words in the following array
 const words = ["The", "early", "bird", "might", "get", "the", "worm", "but", "the", "second", "mouse", "gets", "the", "cheese"]
