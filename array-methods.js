@@ -21,15 +21,15 @@ const planetEl = document.getElementById("planets")
 
     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase
 */
-console.log("Normalcase: " + planets);
+console.log("Lowercase:")
+console.log(planets);
 
-function planetsUpp(input) {
-    return input.map(function(word){
-        return (word.charAt(0).toUpperCase() + word.slice(1));
-    });
-};
+let upperPlanet = planets.map(function(word){
+    return (word.charAt(0).toUpperCase() + word.slice(1));
+});
 
-console.log("Uppercase: " + planetsUpp(planets));
+console.log("Uppercase:")
+console.log(upperPlanet);
 
 /*
     Use the filter method to create a new array that
