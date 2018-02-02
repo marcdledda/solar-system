@@ -44,6 +44,7 @@ let filterPlanets = planets.filter(function(word) {
     return (word.toString().includes("e"));
 });
 
+console.log("Reduced:");
 console.log(filterPlanets);
 
 // Use the reduce method to create a sentence from the words in the following array
@@ -53,4 +54,5 @@ let combineWords = words.reduce(function(word1, wordTogether) {
     return (word1 + " " + wordTogether);
 });
 
- console.log(combineWords);
+console.log("Combined Array:")
+console.log(combineWords);
